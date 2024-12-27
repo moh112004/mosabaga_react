@@ -1,0 +1,119 @@
+.AdminMainRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #eee;
+}
+
+h1 {
+    color: #eee;
+}
+
+.RightColumn {
+    width: 50%;
+}
+
+input {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.UploadButton {
+    background-color: #eee;
+    color: black;
+    border: 1px solid #333;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.UploadButton:hover {
+    background-color: green
+}
+.LeftColumn {
+    width: calc(50% - 50px);
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 2;
+    right: 50%;
+    top: 0;
+}
+.LeftColumn::-webkit-scrollbar {
+    display: none;
+    /* لإخفاء الشريط في متصفحات Webkit مثل Chrome و Safari */
+}
+.Buttons {
+    width: 100%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        /* أعمدة قابلة للتكيف */
+        gap: 10px;
+}
+
+.CircleButton {
+    height: 120px;
+    width: 90px;
+    border-radius: 25px;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: green;
+}
+
+ol {
+    padding: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 80%;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+li p {
+    max-width: 80%;
+}
+
+table {
+    margin: 20px 0;
+    width: 50%;
+}
+
+td,
+th,
+table {
+    border: 1px #eee solid;
+    text-align: center;
+}
+th {
+    width: 1px;
+}
+td {
+    padding: 5px;
+}
+td p {
+    margin: 0;
+}
+
+td input {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #eee;
+    text-align: center;
+}

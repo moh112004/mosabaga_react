@@ -1,0 +1,36 @@
+.DegreeBox {
+    background-color: #050332;
+    padding: 5px;
+    margin: 0 0 20px;
+    font-size: 25px;
+    border: #eee solid 3px;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.ContestantName {
+    position: relative;
+}
+
+.ContestantName::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffffb7;
+    z-index: 0;
+}
+
+.ActivedLamp::before {
+    background-color: transparent;
+}
+
+.ContestantName span {
+    position: relative;
+    z-index: 1;
+    color: black;
+}

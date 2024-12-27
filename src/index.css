@@ -1,0 +1,14 @@
+body {
+
+  padding: 0px 50px 20px;
+  margin: 0;
+  background-color: #050332;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  /* لإخفاء الشريط في متصفحات Webkit مثل Chrome و Safari */
+}

@@ -1,0 +1,23 @@
+.MainRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.MainRow .QuestinDiv {
+    position: absolute;
+    z-index: 2;
+    color: #eee;
+    font-size: 90px;
+    background-color: #050332bc;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
