@@ -67,12 +67,12 @@ export default function AdminPage() {
     const [contestants, setContestants] =
         useState(
             JSON.parse(localStorage.getItem("contestants")) ||
-        [
-        { id: 1, score: 0 },
-        { id: 2, score: 0 },
-        { id: 3, score: 0 },
-        { id: 4, score: 0 },
-    ]);
+            [
+                { id: 1, score: 0 },
+                { id: 2, score: 0 },
+                { id: 3, score: 0 },
+                { id: 4, score: 0 },
+            ]);
 
     // تحديث الاسم
 
@@ -245,8 +245,9 @@ export default function AdminPage() {
                                             {["الأحمر", "الأخضر", "الأزرق", "الأصفر"][i]}
                                         </span>
                                     </td>
-                                    <td>
+                                    <td style={{ backgroundColor: ["red", "green", "blue", "yellow"][i], }}>
                                         <input
+                                            style={{ color: ["", "", "", "black"][i] }}
                                             type="number"
                                             value={contestant.score}
                                             onChange={(e) => updateScore(contestant.id, e.target.value)}

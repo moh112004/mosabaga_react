@@ -142,14 +142,14 @@ export default function Main() {
 
                 let buttonIndex = parseInt(receivedNumber, 10);
 
-                if (buttonIndex >= 0 && buttonIndex < 4 && activeButtonRef.current === null && showQuestionRef.current) {
+                if (buttonIndex >= 0 && buttonIndex < 4 && activeButtonRef.current === null) {
                     setShowQuestion(false);
                     showQuestionRef.current = false;
                     startTimer();
                     setActiveButton(buttonIndex);
                     localStorage.setItem("activeButton", buttonIndex);
                     activeButtonRef.current = buttonIndex;
-                    BuzzerSound.play(); 
+                    BuzzerSound.play();
                 }
             }
         } catch (error) {
